@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head> 
+    <body>
+        <table border = 1>
+            {% for p in range(10, length, 10) %}
+               {% for i in range((p-10), p) %}
+                <tr>
+                
+                    <td style="font-size: 11px;">{{pn[i]}}</td>
+                    <td style="font-style: italic;" style="font-size: small;">{{nid[i]}}</td>
+                    <td>{{pid[i]}}</td>
+                    <td>{{url[i]}}</td>
+                    <td>{{api[i]}}</td>
+                    <td>{{publ[i]}}</td>
+                </tr>
+        
+                {% endfor %}
+            {% endfor %}
+        </table>
+    </body>
+</html>
